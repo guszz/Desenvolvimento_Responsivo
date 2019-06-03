@@ -1,0 +1,62 @@
+.home-frst-block{
+  background: url(img/cabecalho-home-bg.jpg) $paleta-leitura no-repeat;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  padding: 50px 0;
+  &__title{
+    font-size: 58px;
+    margin-bottom: 0;
+  }
+  &__subtitle{
+    font-weight: bold;
+  }
+  &__rolle{
+    display: none;
+  }
+  @media(min-width: $breackpoint-md){
+    background: url(img/cabecalho-home-bg-md.jpg);
+  }
+  @media(min-width: $breackpoint-lg){
+    height: 100vh;
+    &__title{
+      font-size: 78px;
+      margin-top: 400px;
+    }
+    &__subtitle{
+      font-size: 1.8rem;
+    }
+    &__rolle{
+      display: block;
+      position: absolute;
+      color: #fff;
+      bottom: 18px;
+      left: 50%;
+      transform: translate(-50%);
+      letter-spacing: 5px;
+      & img{
+        margin-bottom: -5%;
+      }
+    }
+  }
+  @media(min-width: $breackpoint-xl){
+    background: url(img/cabecalho-home-bg-xl.jpg);
+  }
+}
+.section-title{
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  &::after{
+    content: '';
+    display: block;
+    margin: 0 auto;
+    margin-top: 15px;
+    width: 50px;
+    height: 3px;
+    background-color: $vermelho-paleta;
+  }
+  &--branco::after{
+    background-color: #fff;
+  }
+}

@@ -1,0 +1,310 @@
+*{
+  box-sizing: border-box;
+}
+a, a:visited, a:active {
+    color: inherit;
+    text-decoration: none;
+}
+img{
+  max-width: 100%;
+  height: auto;
+}
+@font-face{
+  font-family: "Source Sans Pro";
+  src: url('fonts/source-sans-pro/SourceSansPro-Regular.otf');
+}
+@font-face{
+  font-family: "Source Sans Pro";
+  src: url('fonts/source-sans-pro/SourceSansPro-Bold.otf');
+  font-weight: bold;
+}
+@font-face{
+  font-family: "Source Sans Pro";
+  src: url('fonts/source-sans-pro/SourceSansPro-Light.otf');
+  font-weight: lighter;
+}
+@font-face{
+  font-family: "Source Sans Pro";
+  src: url('fonts/source-sans-pro/SourceSansPro-BoldIt.otf');
+  font-weight: bold;
+  font-style: italic;
+}
+body{
+  font-family: "Source Sans Pro";
+}
+/*  CABEÇALHO  */
+.cabecalho{
+  background-color: #fff;
+  padding: 15px;
+}
+.logo{
+  background-image: url(img/logotipo-preto.png);
+  background-repeat: no-repeat;
+  width: 120px;
+  height: 53px;
+  text-indent: -9999px;
+  display: block;
+  margin: 0;
+}
+.logo--branco{
+  background-image: url(img/logotipo-branco.png);
+}
+.menu-principal__btn{
+  display: block;
+  width: 50px;
+  height: 50px;
+  text-indent: -9999px;
+  background-color: #fff;
+  background-image: url(img/menuprincipal-btn-bg.png);
+  background-repeat: no-repeat;
+  background-position: 5px 6px;
+  border: 2px solid #c4c4c4;
+  border-radius: 5px;
+  cursor: pointer;
+
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+.menu-principal__btn--fechar{
+  background-position: -48px 7px;
+}
+.menu-principal__lista{
+  padding: 0;
+  list-style: none;
+}
+.menu-principal__item{
+  text-decoration: none;
+  font-weight: bold;
+  color: #343434;
+  margin-bottom: 20px;
+  display: block;
+  font-size: 18px;
+}
+.menu-principal__item--atual{
+  color: #f44242 !important;
+}
+/*  RODAPÉ  */
+.rodape{
+  color: #fff;
+}
+.rodape .logo{
+  margin-bottom: 25px;
+}
+.footer__colum{
+  margin: 40px 0;
+}
+.rodape__bloco-1{
+  background-color: #272525;
+  background-image: url(img/rodape-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 15px;
+}
+.rodape__bloco-2{
+  background-color: #000;
+  text-align: center;
+  padding: 15px;
+}
+.footer__title{
+  border-bottom: 1px solid #fff;
+  padding: 0 10px 10px 10px;
+  font-size: 18px;
+}
+.footer__link-list{
+  list-style: none;
+  padding: 0;
+}
+.footer__link-list__item{
+  display: block;
+  margin-bottom: 10px;
+}
+.footer__link-list__item::before{
+  content: '>';
+  margin-right: 8px;
+  color: #f44242;
+}
+/* Páginas*/
+.pagina-cabecalho{
+  background-color: #f44242;
+  background-image: url(img/cabecalho-pagina-bg.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  padding: 30px 0;
+  text-align: center;
+  color: #fff;
+}
+.pagina-cabecalho__title{
+  text-transform: uppercase;
+}
+.pagina-cabecalho__title::after{
+  content: '';
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 50px;
+  height: 3px;
+  background-color: #fff;
+}
+.page-content{
+  padding: 25px 15px;
+}
+.page-content p{
+  color: #3a3a3a;
+  line-height: 23px;
+  margin: 20px 0;
+}
+.about-image{
+  width: 100%;
+}
+.text-center{
+  text-align: center;
+}
+/* Portifólio*/
+.Job-list{
+  list-style: none;
+  padding: 0;
+}
+.Job-list__item{
+  margin: 0 -15px;
+  margin-bottom: 50px;
+}
+.Job-list__title{
+  color: #000;
+  font-size: 18px;
+  margin-left: 40px 15px;
+  border-left: 2px solid #f44242;
+  padding-left: 10px;
+}
+/*Contato*/
+.contact-form{
+  background-color: #efecec;
+  margin: 0 -15px;
+  padding: 15px;
+  box-shadow: 0 3px 5px rgba(90, 90, 90, 0.3);
+}
+.contact-form__group{
+  margin-bottom: 15px;
+}
+.contact-form__label{
+  color: #343434;
+}
+.contact-form__field{
+  width: 100%;
+  border: 1px solid #c4c4c4;
+  padding: 10px 5px;
+  border-radius: 5px;
+}
+.contact-form_btn{
+  width: 120px;
+  height: 40px;
+  border: 3px solid #f44242;
+  border-radius: 35px;
+  color: #f44242;
+  background-color: #fff;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.map-view{
+  background-color: #3a3a3a;
+  height: 0;
+  padding-bottom: 56.25%;
+  position: relative;
+  overflow: hidden;
+  margin: 0 -15px -25px -15px;
+}
+.map-view iframe{
+  width: 100% !important;
+  height: 100% !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/*HOME*/
+.home-frst-block{
+  background: url(img/cabecalho-home-bg.jpg) #3a3a3a no-repeat;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  padding: 50px 0;
+}
+.home-frst-block__title{
+  font-size: 58px;
+  margin-bottom: 0;
+}
+.home-frst-block__subtitle{
+  font-weight: bold;
+}
+.home-frst-block__rolle{
+  display: none;
+}
+.section-title{
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+.section-title::after{
+  content: '';
+  display: block;
+  margin: 0 auto;
+  margin-top: 15px;
+  width: 50px;
+  height: 3px;
+  background-color: #f44242;
+}
+.section-title--branco::after{
+  background-color: #fff;
+}
+.servicos{
+  padding: 30px 0;
+}
+.servicos__block{
+  text-align: center;
+  padding: 0 15px;
+  margin-bottom: 50px;
+}
+.text-content{
+  color: #3a3a3a;
+}
+.depoimentos{
+  background-color: #f44242;
+  background-image: url(img/cabecalho-pagina-bg.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  padding: 30px 0;
+  color: #fff;
+}
+.depoimentos__item{
+  padding: 0 15px;
+}
+.depoimentos__image{
+  margin: 0 auto;
+  display: block;
+  box-shadow: 3px 3px 1px rgba(0,0,0,.8);
+  margin-bottom: 30px;
+}
+.depoimentos__texto{
+  line-height: 23px;
+  margin-bottom: 30px;
+}
+.depoimentos__texto::before{
+  content: '';
+  background: url(img/aspas.png) #f44242 no-repeat;
+  display: inline-block;
+  width: 25px;
+  height: 23px;
+  margin-right: 8px;
+}
+.depoimentos__person{
+  text-align: center;
+  font-weight: bold;
+  font-style: italic;
+}

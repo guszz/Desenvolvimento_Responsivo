@@ -1,0 +1,37 @@
+// abstracts
+@import "abstracts/_colors";
+@import "abstracts/_breackpoints";
+
+// base
+@import "base/_normalize";
+@import "base/_fonts";
+@import "base/_reset";
+
+// layouts
+@import "layout/_container";
+@import "layout/_header";
+@import "layout/_footer";
+@import "layout/_text-alignment";
+@import "layout/_img-alignment";
+
+// components
+@import "components/_depoimentos";
+@import "components/_form";
+@import "components/_logo";
+@import "components/_map";
+@import "components/_menu";
+@import "components/_page-content";
+@import "components/_page-header";
+@import "components/_servicos";
+
+// pages
+@import "pages/_home";
+@import "pages/_contact";
+@import "pages/_portifolio";
+@import "pages/_sobre";
+
+//Vendors
+
+@import "vendors/_slick";
+@import "vendors/_slick-theme";
+@import "vendors/jquery.fancybox.min";

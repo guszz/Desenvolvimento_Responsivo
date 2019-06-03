@@ -1,0 +1,21 @@
+.content-height{
+  @media(min-width: $breackpoint-lg){
+    min-height: 700px;
+  }
+}
+.about img{
+  display: block;
+  margin: auto;
+  @media(min-width: $breackpoint-md){
+      margin-right: 15px;
+      margin-bottom: 15px;
+  }
+}
+.about-page{
+  .page-content{
+    @media(min-width: $breackpoint-md){
+      padding-right: 150px;
+      padding-left: 150px;
+    }
+  }
+}

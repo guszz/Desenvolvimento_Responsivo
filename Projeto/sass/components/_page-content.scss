@@ -1,0 +1,13 @@
+.page-content{
+  padding: 25px 15px;
+  overflow: auto;
+  p{
+    color: $paleta-leitura;
+    line-height: 23px;
+    margin: 20px 0;
+  }
+  @media(min-width: $breackpoint-md){
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}

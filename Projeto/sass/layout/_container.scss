@@ -1,0 +1,16 @@
+.container{
+  margin: 0 auto;
+  padding: 0 15px;
+  @media(min-width: $breackpoint-sm){
+    max-width: 540px;
+  }
+  @media(min-width: $breackpoint-md){
+    max-width: 720px;
+  }
+  @media(min-width: $breackpoint-lg){
+    max-width: 960px;
+  }
+  @media(min-width: $breackpoint-xl){
+    max-width: 1140px;
+  }
+}

@@ -1,0 +1,8 @@
+.contact-page{
+  .page-content{
+    @media(min-width: $breackpoint-md){
+      padding-right: 150px;
+      padding-left: 150px;
+    }
+  }
+}

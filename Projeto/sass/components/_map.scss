@@ -1,0 +1,24 @@
+.map-view{
+  background-color: #3a3a3a;
+  height: 0;
+  padding-bottom: 56.25%;
+  position: relative;
+  overflow: hidden;
+  margin: 0 -15px -25px -15px;
+  iframe{
+    width: 100% !important;
+    height: 100% !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  @media(min-width: 450px){
+    padding-bottom: 48.12%;
+  }
+  @media(min-width: $breackpoint-md){
+    padding-bottom: 38.12%;
+  }
+  @media(min-width: $breackpoint-lg){
+    padding-bottom: 28.12%;
+  }
+}
